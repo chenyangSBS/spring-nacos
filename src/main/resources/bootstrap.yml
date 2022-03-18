@@ -1,9 +1,0 @@
-spring:
-  cloud:
-    nacos:
-      config:
-        server-addr: 127.0.0.1:8848
-        ## 文件后缀
-        file-extension: yml
-  application:
-    name: spring-nacos
