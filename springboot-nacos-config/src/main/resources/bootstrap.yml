@@ -7,5 +7,8 @@ spring:
         group: DEFAULT_GROUP
         file-extension: yml
         refresh-enabled: true
-        shared-dataids: common-pro.yml
-#        prefix: common
+        prefix: common
+      discovery:
+        server-addr: localhost:8848
+        namespace: 780fdaa2-5e63-4bc4-aa42-8f91072a953f
+        group: DEFAULT_GROUP
