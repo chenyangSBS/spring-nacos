@@ -5,11 +5,14 @@
     <packaging>pom</packaging>
     <modules>
         <module>springboot-nacos-config</module>
+        <module>springcloud-nacos-config</module>
+        <module>springcloud-nacos-discovery</module>
+        <module>springboot-nacos-discovery</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>2.3.12.RELEASE</version>
+        <version>2.1.0.RELEASE</version>
         <relativePath/>
     </parent>
     <groupId>com.core</groupId>

@@ -1,0 +1,10 @@
+spring:
+  cloud:
+    nacos:
+      config:
+        server-addr: localhost:8848
+        namespace: 7e98b650-0c03-4663-b747-b3d4848630aa
+        group: DEFAULT_GROUP
+        file-extension: yml
+        refresh-enabled: true
+        prefix: common

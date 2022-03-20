@@ -1,14 +1,18 @@
 server:
   port: 6001
   servlet:
-    context-path: /nacos-config
+    context-path: /springboot-nacos-config
 spring:
   application:
     name: springboot-nacos-config
+nacos:
+  config:
+    server-addr: localhost:8848
+    namespace: 7e98b650-0c03-4663-b747-b3d4848630aa
 
-#自定义参数
-datasource:
-  url: localhost:3306
-  username: syx
-  password: root
+##自定义参数
+#datasource:
+#  url: localhost:3306
+#  username: syx
+#  password: root
 
