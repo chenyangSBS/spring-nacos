@@ -8,6 +8,7 @@
         <module>springcloud-nacos-config</module>
         <module>springcloud-nacos-discovery</module>
         <module>springboot-nacos-discovery</module>
+        <module>springcloud-nacos-discovery-client</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>

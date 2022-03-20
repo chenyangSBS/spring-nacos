@@ -19,10 +19,8 @@ public class NacosDiscovery {
     @NacosInjected
     private NamingService namingService;
 
-
     @PostConstruct
     public void registerInstance() throws NacosException {
         namingService.registerInstance(applicationName,"127.0.0.1",serverPort);
     }
-
 }
