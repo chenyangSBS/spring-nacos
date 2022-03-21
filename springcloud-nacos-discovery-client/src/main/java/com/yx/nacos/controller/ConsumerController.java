@@ -10,7 +10,6 @@ import org.springframework.web.client.RestTemplate;
 @RestController
 public class ConsumerController {
 
-
     @Autowired
     private LoadBalancerClient loadBalancerClient;
 
@@ -22,5 +21,11 @@ public class ConsumerController {
         RestTemplate restTemplate = new RestTemplate();
         String result = restTemplate.getForObject(url, String.class);
         return "Invoke : " + url + ", return : " + result;
+    }
+
+    @GetMapping("/metadata")
+    public String metadata() {
+        ServiceInstance serviceInstance = loadBalancerClient.choose("springcloud-nacos-discovery");
+        return "metadata : " + serviceInstance.getMetadata().toString();
     }
 }
