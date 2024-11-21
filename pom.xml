@@ -4,16 +4,14 @@
     <modelVersion>4.0.0</modelVersion>
     <packaging>pom</packaging>
     <modules>
-        <module>springboot-nacos-config</module>
         <module>springcloud-nacos-config</module>
-        <module>springcloud-nacos-discovery</module>
-        <module>springboot-nacos-discovery</module>
-        <module>springcloud-nacos-discovery-client</module>
+        <module>springcloud-nacos-provider</module>
+        <module>springcloud-nacos-consumer</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>2.1.0.RELEASE</version>
+        <version>3.0.6</version>
         <relativePath/>
     </parent>
     <groupId>com.core</groupId>
@@ -27,8 +25,9 @@
 
     <dependencies>
         <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter</artifactId>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter</artifactId>
+            <version>4.0.2</version>
         </dependency>
 
         <dependency>
@@ -45,7 +44,6 @@
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
-            <version>1.18.4</version>
         </dependency>
 
         <dependency>
@@ -54,19 +52,21 @@
             <version>3.4</version>
         </dependency>
 
+        <dependency>
+            <groupId>com.fasterxml.jackson.datatype</groupId>
+            <artifactId>jackson-datatype-hibernate5-jakarta</artifactId>
+        </dependency>
 
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-openfeign</artifactId>
+            <version>4.0.4</version>
+        </dependency>
 
-        <!--        <dependency>
-                    <groupId>com.alibaba.boot</groupId>
-                    <artifactId>nacos-config-spring-boot-starter</artifactId>
-                    <version>0.2.10</version>
-                </dependency>
-
-                <dependency>
-                    <groupId>com.alibaba.boot</groupId>
-                    <artifactId>nacos-discovery-spring-boot-starter</artifactId>
-                    <version>0.2.10</version>
-                </dependency>-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-validation</artifactId>
+        </dependency>
 
     </dependencies>
 
@@ -75,6 +75,7 @@
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
+                <version>3.0.6</version>
             </plugin>
         </plugins>
     </build>

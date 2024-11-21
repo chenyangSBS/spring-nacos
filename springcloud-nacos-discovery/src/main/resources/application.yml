@@ -1,8 +1,0 @@
-server:
-  port: 6004
-  servlet:
-    context-path: /springcloud-nacos-discovery
-spring:
-  application:
-    name: springcloud-nacos-discovery
-

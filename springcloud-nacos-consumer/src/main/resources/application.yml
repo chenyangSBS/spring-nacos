@@ -1,0 +1,18 @@
+server:
+  port: 6005
+  servlet:
+    context-path: /consumer
+spring:
+  application:
+    name: consumer
+
+#provider:
+#  ribbon:
+#    NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RandomRule #配置规则 随机
+#    ConnectTimeout: 500
+#    ReadTimeout: 1000
+#    OkToRetryOnAllOperations: true
+#    MaxAutoRetriesNextServer: 2
+#    MaxAutoRetries: 1
+
+

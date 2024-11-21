@@ -1,10 +1,13 @@
 spring:
+  application:
+    name: springcloud-nacos-config
   cloud:
     nacos:
       config:
-        server-addr: localhost:8848
-        namespace: 7e98b650-0c03-4663-b747-b3d4848630aa
+        server-addr: 192.168.52.244:8848
+        namespace: 4827a3a4-95de-45d3-af55-ce6064946fd2
         group: DEFAULT_GROUP
         file-extension: yml
         refresh-enabled: true
-        prefix: common
+        import-check:
+          enabled: false

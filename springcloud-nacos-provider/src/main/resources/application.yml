@@ -1,0 +1,8 @@
+server:
+  port: 6004
+  servlet:
+    context-path: /provider
+spring:
+  application:
+    name: provider
+

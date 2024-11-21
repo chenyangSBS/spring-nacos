@@ -2,13 +2,3 @@ server:
   port: 6003
   servlet:
     context-path: /springcloud-nacos-config
-spring:
-  application:
-    name: springcloud-nacos-config
-
-#自定义参数
-datasource:
-  url: localhost:3306
-  username: syx
-  password: root
-
