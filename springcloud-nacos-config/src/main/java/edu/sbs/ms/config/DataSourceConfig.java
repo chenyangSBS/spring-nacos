@@ -9,12 +9,12 @@ import org.springframework.stereotype.Component;
 @RefreshScope
 @Data
 public class DataSourceConfig {
-    @Value("${datasource.url}")
+    @Value("${spring.datasource.url}")
     private String url;
 
-    @Value("${datasource.username}")
+    @Value("${spring.datasource.username}")
     private String username;
 
-    @Value("${datasource.password}")
+    @Value("${spring.datasource.password}")
     private String password;
 }
