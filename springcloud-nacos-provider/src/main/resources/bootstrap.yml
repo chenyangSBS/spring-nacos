@@ -3,7 +3,7 @@ spring:
     nacos:
       discovery:
         server-addr: 192.168.52.244:8848
-        namespace: 4827a3a4-95de-45d3-af55-ce6064946fd2
+        namespace: 0e1a07dd-085b-4412-b87b-4644c665fdbc
         group: DEFAULT_GROUP
     inetutils:
       ignored-interfaces: 'VMware Virtual Ethernet Adapter for VMnet1,VMware Virtual Ethernet Adapter for VMnet8'

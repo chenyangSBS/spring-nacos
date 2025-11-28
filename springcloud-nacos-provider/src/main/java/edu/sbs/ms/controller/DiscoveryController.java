@@ -14,7 +14,7 @@ public class DiscoveryController {
     @RequestMapping(value = "/welcome")
     @ResponseBody
     public String producer(@RequestParam String name) throws NacosException {
-        return "RequestParam: " + name ;
+        return "Welcome: " + name + " !";
     }
 
     @RequestMapping(value = "/challenge/random/{max}")
