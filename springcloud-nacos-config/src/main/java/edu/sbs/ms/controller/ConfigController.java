@@ -1,5 +1,6 @@
 package edu.sbs.ms.controller;
 
+import com.alibaba.nacos.api.config.annotation.NacosValue;
 import edu.sbs.ms.config.DataSourceConfig;
 import edu.sbs.ms.entity.User;
 import edu.sbs.ms.service.UserService;

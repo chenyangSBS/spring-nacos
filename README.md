@@ -33,6 +33,7 @@ spring:
         namespace: 0e1a07dd-085b-4412-b87b-4644c665fdbc
         group: DEFAULT_GROUP
     inetutils:
+    
       ignored-interfaces: 'VMware Virtual Ethernet Adapter for VMnet1,VMware Virtual Ethernet Adapter for VMnet8'
 ```
 

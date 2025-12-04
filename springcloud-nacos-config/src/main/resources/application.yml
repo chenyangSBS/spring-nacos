@@ -1,4 +1,4 @@
 server:
-  port: 6003
+  port: 6006
   servlet:
     context-path: /springcloud-nacos-config
